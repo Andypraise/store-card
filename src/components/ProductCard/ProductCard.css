@@ -41,7 +41,7 @@ height: 130px;
 }
 @media(max-width:768px){
     .text{
-        width: 190px;
+        width: 300px;
         height: 190px;
         display: flex;
         flex-direction: column;
@@ -63,5 +63,4 @@ height: 130px;
 .text p{
     font-size: 10px;
 }
-
 }

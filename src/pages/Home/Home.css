@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: #F5F5F5;
+body {
+  background-color: #f5f5f5;
   position: relative;
 }
 .home-feature {
@@ -13,9 +13,9 @@ body{
   gap: 20rem;
   padding: 15px;
 }
-.home-feature img{
-width:160% ;
-height: 500px;
+.feature img {
+  width: 160%;
+  height: 500px;
 }
 .product {
   display: flex;
@@ -44,52 +44,53 @@ height: 500px;
   background-color: white;
   box-shadow: 3px 3px 3px 3px rgb(228, 227, 227);
 }
-.konga a{
-    text-decoration: none;
-    color: black;
+.konga a {
+  text-decoration: none;
+  color: black;
 }
-.today{
-    
-    padding: 20px;
+.today {
+  padding: 20px;
 }
-.deal{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    background-color: #91004D;
-    padding: 10px;
-    border-radius: 7px 7px 0 0;
-    width: 100%;
-
+.deal {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: #91004d;
+  padding: 10px;
+  border-radius: 7px 7px 0 0;
+  width: 100%;
 }
-.deal h2{
-    font-size: 30px;
-    color: #ffff;
+.deal h2 {
+  font-size: 30px;
+  color: #ffff;
 }
-.deal a{
-    text-decoration: none;
-    color: #ffff;
-    font-size: 15px;
+.deal a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 15px;
 }
-.deal a:hover{
-    text-decoration: underline
+.deal a:hover {
+  text-decoration: underline;
 }
-.card-2{
+.card-2 {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
-.electron{
+.electron {
   display: flex;
   flex-direction: row;
   background-color: white;
   padding: 10px;
   margin-top: 20px;
 }
-.electron img{
-    width: 210px;
-    height: 200px;
-    border-radius: 10px;
-    cursor: pointer;
+.electron img {
+  width: 210px;
+  height: 200px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .btm {
   width: 100%;
@@ -97,24 +98,23 @@ height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F5A623;
+  background-color: #f5a623;
   text-align: center;
   margin-top: 20px;
 }
-.laptop-section{
+.laptop-section {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
-  
 }
-.laptop-section img{
+.laptop-section img {
   width: 210px;
   height: 150px;
   margin-left: 7px;
   cursor: pointer;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-.wears{
+.wears {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,70 +124,79 @@ height: 500px;
   border-radius: 10px;
   cursor: pointer;
 }
-.wears img{
+.wears img {
   border-radius: 10px;
 }
-@media(max-width:768px){
-  
-  .home-feature{
+@media (max-width: 768px) {
+  .home-feature {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 0;
   }
-  .home-feature img{
+  .feature img {
     width: 100%;
     height: 200px;
   }
-  .product{
+  .product {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding: 0;
   }
-  .product img{
-    width: 170px;
+  .product img {
+    width: 200px;
     height: 170px;
-    
   }
-  .blog-section{
+  .blog-section {
     display: flex;
     flex-wrap: wrap;
   }
-  .konga{
+  .konga {
     width: 40%;
     height: 50px;
   }
-  .card-2{
+  .card-2 {
     display: flex;
     flex-wrap: wrap;
+    object-fit: cover;
   }
-  .electron{
+  .electron {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
-  .electron img{
+  .electron img {
     width: 100px;
     height: 100px;
   }
-  .laptop-section{
+  .laptop-section {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .laptop-section img{
+  .deal{
+    width: 97%;
+  }
+  .deal h2{
+    font-size: 20px;
+  }
+  
+  .laptop-section img {
     width: 100px;
     height: 70px;
   }
-  .btm h4{
+  .btm h4 {
     font-size: 23px;
   }
-  .wears{
+  .wears {
     display: flex;
     flex-direction: column;
   }
-  .wears img{
+  .wears img {
     width: 100%;
   }
 }

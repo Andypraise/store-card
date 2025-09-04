@@ -227,6 +227,7 @@
     justify-content: center;
     gap: 10px;
   }
+
   .link-all {
     display: flex;
     flex-wrap: wrap;
@@ -242,7 +243,7 @@
   .hr hr {
     width: 70px;
   }
-  .with p{
+  .with p {
     right: 30px;
   }
 }

@@ -178,17 +178,18 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .deal{
+  .deal {
     width: 97%;
   }
-  .deal h2{
+  .deal h2 {
     font-size: 20px;
   }
-  
+
   .laptop-section img {
     width: 70px;
     height: 65px;
   }
+  
   .btm h4 {
     font-size: 23px;
   }

@@ -1,0 +1,248 @@
+.footer-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background: #0c0c0c;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.date {
+  width: 100%;
+}
+.support {
+  background: #2e2e2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 20px;
+  color: #ababab;
+}
+.latest {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.latest img {
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+.latest h4 {
+  line-height: 25px;
+}
+.latest span {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.latest:hover {
+  color: #fff;
+}
+.last {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.last input {
+  width: 170px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 5px 0 0 5px;
+}
+::placeholder {
+  color: black;
+}
+.last button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 0 5px 5px 0;
+  font-weight: 700;
+  color: #fff;
+  background: #ed107f;
+  cursor: pointer;
+}
+.footer-link {
+  display: flex;
+  margin-top: 30px;
+}
+.link-all {
+  display: flex;
+  gap: 30px;
+  color: #ababab;
+}
+.link {
+  gap: 30px;
+}
+.link h4 {
+  font-size: 16px;
+}
+.link li {
+  list-style: none;
+  margin-top: 10px;
+}
+.link a {
+  text-decoration: none;
+  color: #ababab;
+}
+.link a:hover {
+  color: #fff;
+}
+.link h4:hover {
+  color: #fff;
+}
+.apple {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #000000;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.apple h4 {
+  color: #ababab;
+  font-weight: 400;
+  font-size: 12px;
+}
+.apple h4 span {
+  font-weight: 700;
+  font-size: 15px;
+}
+.play {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 50px;
+  margin-left: 50px;
+}
+.play-all {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.connect {
+  margin-right: 100px;
+  margin-top: 35px;
+}
+.connect h4 {
+  display: flex;
+  align-items: center;
+  color: #ababab;
+}
+.face {
+  display: flex;
+  gap: 20px;
+}
+.connect img {
+  margin-top: 20px;
+  cursor: pointer;
+}
+.hr {
+  display: flex;
+  align-items: center;
+}
+.hr p {
+  font-size: 15px;
+  color: #ababab;
+}
+.hr hr {
+  width: 500px;
+  height: 1px;
+}
+.today-1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  right: 1%;
+  bottom: 1%;
+  cursor: pointer;
+}
+.help {
+  background: #fff;
+  padding: 12px;
+  border-radius: 18px 18px 4px 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  float: left;
+  clear: both;
+}
+.with {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ed107f;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 20px 20px 20px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+  text-align: left;
+  float: left;
+  transition: all 0.3s ease-in-out;
+}
+.with p {
+  margin-top: 5px;
+  margin-bottom: 2px;
+  font-size: 12px;
+  color: black;
+  background: #fff;
+  border: 1px solid black;
+  padding: 2px;
+  bottom: 0;
+  right: 0;
+
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.with img {
+  display: block;
+  transition: transform 0.2s;
+}
+.with img:hover {
+  transform: scale(1.1);
+}
+.with:hover p {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .support {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .link-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .today-1 {
+    left: 10%;
+    bottom: 18%;
+  }
+  .hr p {
+    font-size: 10px;
+  }
+  .hr hr {
+    width: 70px;
+  }
+  .with p{
+    right: 30px;
+  }
+}

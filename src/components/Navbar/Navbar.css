@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Segoe UI;
+}
+.nav{
+  position: sticky;
+  top: 0;
+
+}
+.nav-container{
+  position: relative;
+}
+.delivery {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #0b0104;
+  color: white;
+}
+.delivery-2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.delivery .now{
+  font-size: 70px;
+}
+.delivery-2 .set {
+  font-size: 50px;
+  padding-top: 15px;
+}
+.select{
+    display: flex;
+    align-items: center;
+}
+.open-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.open-all p {
+  font-size: 10px;
+  background: #f9a020;
+  padding: 5px;
+  border-radius: 10px;
+  animation: zoom-in-out 1s alternate infinite ease-in-out;
+}
+.open-all p span {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+.sup {
+  font-size: 20px;
+}
+@keyframes zoom-in-out{
+    0%{
+        transform: scale(0.7);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.now{
+  animation: fadeInBottom 2s alternate infinite;  
+}
+ .set {
+  animation: fadeInTop 2s alternate infinite;
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn{
+    margin-left: 5px;
+}
+.btn button{
+    width: 90px;
+    height: 20px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background: #ED007F;
+    color: #fff;
+    cursor: pointer;
+}
+.open{
+    height: 30px;
+}
+.open img{
+    width: 100%;
+}
+.store{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #ED007F;
+    padding: 10px;
+}
+.store h1{
+    color: #fff;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+
+}
+.navbar li{
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 22px;
+    transition: .5s ease-in-out;
+}
+.navbar a:hover{
+    background-color: #fff;
+    color: #ED007F;
+    
+}
+.input{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.input img{
+    width: 30px;
+    height: 30px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.input input{
+width: 450px;
+height: 30px;
+outline: none;
+border: none;
+border-radius: 5px 0 0 5px ;
+padding: 10px;
+
+}
+
+.drop{
+    position: relative;
+}
+.dropdown{
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px rgb(211, 207, 207);
+    width: 180px;
+    height: 270px;
+    top: 130%;
+    display: none;
+    transition: .5s ease-in-out;
+}
+.dropdown li{
+    margin-top: 15px;
+}
+.dropdown li a{
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+}
+.drop:hover .dropdown{
+    display: block;
+}
+.btc{
+    padding-top: 10px;
+}
+.btc button{
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #33B27B;
+    color: #fff;
+    cursor: pointer;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    background-color: #94004F;
+    padding: 10px;
+    height: 60px;
+}
+.cart h2{
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+.cart ul{
+    font-size: 13px;
+}
+@media (max-width:768px){
+    .navbar{
+        display: none;
+    }
+    .delivery{
+        gap: 0;
+        padding: 10px;
+        display: none;
+    }
+    .delivery-2 .now{
+        font-size: 10px;
+    }
+    .delivery-2 .set{
+        font-size: 10px;
+    }
+    .open-all p span{
+      width:160px;
+      height: 70px;
+      font-size: 10px;
+    }
+    .sup{
+      font-size: 10px;
+    }
+    .open{
+      display: none;
+    }
+    .open img{
+      height: 20px;
+    }
+    .input input{
+        width: 120px;
+    }
+    .btc button{
+      width: 60px;
+    }
+    .store{
+      padding: 10px;
+    }
+    
+}
